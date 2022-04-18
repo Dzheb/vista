@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>736</width>
+    <height>412</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Times New Roman</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::StrongFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>База данных</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>360</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Добавить</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>360</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Сохранить</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>360</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Удалить</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>10</y>
+     <width>301</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Зашли как:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>10</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>customer_icon.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>40</y>
+     <width>671</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>671</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhNone</set>
+   </property>
+   <property name="sizeAdjustPolicy">
+    <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+   </property>
+   <property name="alternatingRowColors">
+    <bool>true</bool>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::SingleSelection</enum>
+   </property>
+   <property name="selectionBehavior">
+    <enum>QAbstractItemView::SelectRows</enum>
+   </property>
+   <property name="rowCount">
+    <number>10</number>
+   </property>
+   <property name="columnCount">
+    <number>3</number>
+   </property>
+   <attribute name="horizontalHeaderCascadingSectionResizes">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="horizontalHeaderMinimumSectionSize">
+    <number>200</number>
+   </attribute>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>219</number>
+   </attribute>
+   <attribute name="horizontalHeaderStretchLastSection">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderMinimumSectionSize">
+    <number>23</number>
+   </attribute>
+   <attribute name="verticalHeaderDefaultSectionSize">
+    <number>30</number>
+   </attribute>
+   <attribute name="verticalHeaderHighlightSections">
+    <bool>true</bool>
+   </attribute>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <column>
+    <property name="text">
+     <string>Имя</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="textAlignment">
+     <set>AlignCenter</set>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Телефон</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="textAlignment">
+     <set>AlignCenter</set>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Дата рождения</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="textAlignment">
+     <set>AlignCenter</set>
+    </property>
+   </column>
+   <item row="0" column="1">
+    <property name="text">
+     <string/>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="textAlignment">
+     <set>AlignCenter</set>
+    </property>
+   </item>
+   <item row="0" column="2">
+    <property name="textAlignment">
+     <set>AlignCenter</set>
+    </property>
+   </item>
+   <item row="1" column="1">
+    <property name="textAlignment">
+     <set>AlignCenter</set>
+    </property>
+   </item>
+   <item row="1" column="2">
+    <property name="text">
+     <string/>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="textAlignment">
+     <set>AlignCenter</set>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>10</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Выбрана строка:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>10</y>
+     <width>21</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>10</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Выбраны фамилии на:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>10</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="maxVisibleItems">
+    <number>14</number>
+   </property>
+   <item>
+    <property name="text">
+     <string>АБ</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ВГ</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ДЕЁ</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ЖЗИ</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ЙКЛ</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>МН</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ОП</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>РС</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ТУ</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ФХ</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ЦЧШ</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ЩЫЭ</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ЮЯ</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>tableWidget</sender>
+   <signal>cellClicked(int,int)</signal>
+   <receiver>label_4</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>337</x>
+     <y>99</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>324</x>
+     <y>19</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox</sender>
+   <signal>activated(QString)</signal>
+   <receiver>label_6</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>100</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>189</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

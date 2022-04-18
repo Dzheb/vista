@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dialog</class>
+ <widget class="QDialog" name="dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>401</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ввод контакта</string>
+  </property>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>511</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>Имя</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>100</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>Телефон</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dateEdit">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>190</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QCalendarWidget" name="calendarWidget">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>70</y>
+     <width>301</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>150</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Дата рождения</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>280</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>ОК</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>280</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Отмена</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>calendarWidget</sender>
+   <signal>clicked(QDate)</signal>
+   <receiver>dateEdit</receiver>
+   <slot>setDate(QDate)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>257</x>
+     <y>175</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>149</x>
+     <y>205</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dateEdit</sender>
+   <signal>dateChanged(QDate)</signal>
+   <receiver>calendarWidget</receiver>
+   <slot>setSelectedDate(QDate)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>154</x>
+     <y>214</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>257</x>
+     <y>187</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>dialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>201</x>
+     <y>298</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>198</x>
+     <y>353</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>432</x>
+     <y>298</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>430</x>
+     <y>354</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
